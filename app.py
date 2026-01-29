@@ -14,4 +14,8 @@ if st.button("预测"):
     X = pd.DataFrame([[pv, cart, fav]],
                      columns=['pv_count', 'cart_count', 'fav_count'])
     prob = model.predict_proba(X)[0][1]
-    st.write(f"购买概率：{prob:.2%}")
+        if prob > 0.5:
+        st.write(f"该用户购买概率 {prob:.2%}，建议推送优惠券")
+    else:
+        st.write(f"购买概率：{prob:.2%}")
+
