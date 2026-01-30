@@ -4,10 +4,9 @@
 
 项目为基于 LightGBM 的用户行为预测系统，使用 Streamlit 构建 Web Demo。(单一模拟)
 运行方式：
-1. streamlit run app.py
-2. 浏览器访问 http://localhost:8504/
-   
+streamlit run app.py
+
 预测代码(app1.py)可进行批量模拟
 运行方式：
-1. streamlit run app1.py
-2. 浏览器访问 http://localhost:8505/
+streamlit run app1.py
+
